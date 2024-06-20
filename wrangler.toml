@@ -1,0 +1,22 @@
+name = "{YOUR PROJECT NAME}"
+compatibility_date = "2023-12-01"
+compatibility_flags = ["nodejs_compat"] #WorkerでNode.jsのAPIを有効化するため
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "{YOUR DATABASE NAME}"
+database_id = "{YOUR DATABASE ID}"
+
+# [ai]
+# binding = "AI"
