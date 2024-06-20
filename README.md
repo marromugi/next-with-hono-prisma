@@ -2,13 +2,14 @@
 
 ## technology stack
 
-- nextjs (app router)
-- hono
-  - jwt(middleware)
-  - cors(middleware)
-- prisma
+- [nextjs](https://github.com/vercel/next.js) (app router)
+- [hono](https://github.com/honojs/hono)
+  - [jwt](https://hono.dev/docs/middleware/builtin/jwt)(middleware)
+  - [cors](https://hono.dev/docs/middleware/builtin/cors)(middleware)
+  - [zod-validator](https://hono.dev/docs/guides/validation#with-zod)(middleware)
+- [prisma](https://github.com/prisma/prisma)
 - d1 (cloudflare)
-- zod (validation to both of frontend and backend)
+- [zod](https://github.com/colinhacks/zod) (validation to both of frontend and backend)
 
 
 ## Setup
