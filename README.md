@@ -1,4 +1,17 @@
-# Nextjs(App router) with hono and prisma(d1)
+# nextjs(App router) with hono and prisma(d1)
+
+## technology stack
+
+- nextjs (app router)
+- hono
+  - jwt(middleware)
+  - cors(middleware)
+- prisma
+- d1 (cloudflare)
+- zod (validation to both of frontend and backend)
+
+
+## Setup
 
 1. rewrite wrangler.toml to your project's info.
 
@@ -27,6 +40,7 @@ database_id = "{YOUR DB ID}"
 # binding = "AI"
 ```
 
+2. run below commands
 ```
 $ pnpm install
 
@@ -38,5 +52,11 @@ $ npx prisma migrate diff --from-empty --to-schema-datamodel ./prisma/schema.pri
 $ npx wrangler d1 migrations apply {db-name} --local
 $ npx wrangler d1 migrations apply {db-name} --remote
 ```
+
+3. run project
+```
+pnpm dev
+```
+
 
 You can register user at `/admin/signup`, and sign in with the registered user.
